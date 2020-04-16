@@ -5,6 +5,38 @@ body{
     font-family: Arial;
     min-height: 100vh;
     }
-header{
-    
+.menu{
+    background-color: black;
+}
+        
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul li a{
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration:none;
+}
+.menu ul li a:hover{
+background: black;
+}
+input{
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+}
+        
+.search-barra{
+    float: left;
+}
+.barra{
+    border-radius: 50px;
+    width: 80%;
 }
