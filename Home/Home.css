@@ -4,18 +4,22 @@ body{
     padding: 0px;
     font-family: Arial;
     min-height: 100vh;
-    }
+    font-family: 'Didact Gothic', sans-serif;
+
+}
 .menu{
     background-color: black;
+    border-bottom: gray 1px groove;
 }
         
 .menu ul{
     list-style: none;
     margin:0;
-    padding: 0;
+    padding: 10px 0px 20px 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
 
 }
 
@@ -25,6 +29,7 @@ body{
     padding: 22px;
     padding-right: 40px;
     text-decoration:none;
+    font-weight: bold;
 }
 
 .menu ul li a:hover{
@@ -34,7 +39,7 @@ background: black;
 input{
     width: 50%;
     display: block;
-    margin: 18px 10px 10px 10px
+    margin: 22px 10px 10px 10px
 }
         
 .search-barra{
@@ -46,6 +51,22 @@ input{
     width: 80%;
 }
 
-.carusel{
-    
+.fotocarusel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 400px;
+    padding-top: 0px;
+   
 }
+
+
+
+
+
+
+
+
+
+
