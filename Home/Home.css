@@ -40,7 +40,12 @@ input{
 .search-barra{
     float: left;
 }
+
 .barra{
     border-radius: 50px;
     width: 80%;
+}
+
+.carusel{
+    
 }
