@@ -1,0 +1,63 @@
+body{
+    background-image: url(https://www.androidsis.com/wp-content/uploads/2019/06/Fondos-pantalla-oscuros-2.jpg);
+    background-size: 100%;
+    padding: 0px;
+    font-family: Arial;
+    min-height: 100vh;
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+.menu{
+    background-color: black;
+    border-bottom: gray 1px groove;
+}
+        
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+}
+
+.menu ul li a{
+    color: white;
+    display: block;
+    padding: 22px;
+    padding-right: 40px;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+background: black;
+}
+
+input{
+    width: 50%;
+    display: block;
+    margin: 22px 10px 10px 10px
+}
+        
+.search-barra{
+    float: left;
+}
+
+.barra{
+    border-radius: 50px;
+    width: 80%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+.deezer{
+    width: 200px;
+    height: 100px;
+}
