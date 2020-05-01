@@ -73,7 +73,7 @@ input{
 
 
 .containerart{
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
@@ -84,6 +84,7 @@ input{
 
 .containerart div:hover{
     border: 1px solid orange;
+
 }
 
 
