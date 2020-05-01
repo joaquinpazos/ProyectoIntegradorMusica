@@ -10,6 +10,15 @@ body{
 .menu{
     background-color: black;
 }
+
+.fotologo{
+    width: 230px;
+    height: 70px;
+    display: block;
+    margin-left: initial;
+    margin-right: auto;
+    padding-left: 20px;
+}
         
 .menu ul{
     list-style: none;
