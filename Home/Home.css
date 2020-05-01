@@ -71,7 +71,7 @@ input{
     
 }
 
-.containerart div{
+.containerart div:hover{
     border: 1px solid orange;
 
 }
