@@ -5,7 +5,7 @@ body{
     font-family: Arial;
     min-height: 100vh;
     font-family: 'Didact Gothic', sans-serif;
-
+    flex-wrap: wrap;
 }
 .menu{
     background-color: black;
@@ -89,12 +89,11 @@ input{
     margin-bottom: 5px;
   }
 
-footer {
-    position: absolute;
-    bottom: 0;
+.footer{
+    line-height: 3;
+    text-align: center;
     width: 100%;
-    color: white;
-  }
+}
 .deezer{
     width: 200px;
     height: 100px;

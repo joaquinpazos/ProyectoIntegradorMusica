@@ -5,11 +5,22 @@ body{
     font-family: Arial;
     min-height: 100vh;
     font-family: 'Didact Gothic', sans-serif;
-
+    flex-wrap: wrap;
 }
 .menu{
     background-color: black;
     border-bottom: gray 1px groove;
+}
+
+.container .main-row article{ 
+    padding: 100px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+.container .second-row article{
+    padding: 100px;
+    background-color: white;
+    margin-bottom: 15px;
 }
 
 .fotologo{
@@ -59,68 +70,14 @@ input{
     border-radius: 50px;
     width: 80%;
 }
-
-.fotocarusel{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-bottom: 15px;
-    height: 400px;
-    padding-top: 0px;   
-}
-
-
-
-.containerart{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color: white;
+.footer{
+    line-height: 3;
     text-align: center;
-    padding-top: 20px;
-    
-}
-
-.containerart div:hover{
-    border: 1px solid orange;
-
-}
-
-
-
-
-footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    color: white;
-  }
+}
 .deezer{
     width: 200px;
     height: 100px;
 }
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
