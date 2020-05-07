@@ -1,12 +1,11 @@
 body{
+    background-image: url(https://www.androidsis.com/wp-content/uploads/2019/06/Fondos-pantalla-oscuros-2.jpg);
     background-size: 100%;
     padding: 0px;
     font-family: Arial;
     min-height: 100vh;
     font-family: 'Didact Gothic', sans-serif;
-}
-.background{
-    background-size: 100%;
+
 }
 .menu{
     background-color: black;
