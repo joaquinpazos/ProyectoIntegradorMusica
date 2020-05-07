@@ -86,3 +86,21 @@ input{
     height: 100px;
 }
 
+.album{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+}
+.tracks{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+}
+.artistas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+}
