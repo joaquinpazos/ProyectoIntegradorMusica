@@ -12,18 +12,6 @@ body{
     border-bottom: gray 1px groove;
 }
 
-.container .main-row article{ 
-    padding-top: 100px;
-    background-color: white;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-.container .second-row article{
-    padding: 100px;
-    background-color: white;
-    margin-bottom: 15px;
-    height: 500px;
-}
 
 .fotologo{
     width: 190px;
@@ -99,7 +87,22 @@ input{
     margin-left: 10px;
 }
 
+.contenedor{
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
 .fotos{
-    height: 300px;
-    width: 300px;
+    margin-right: 56px;
+}
+.fotos:last-child{
+    margin-right: 0;
+}
+.titulo{
+    color: white;
+}
+.nombres{
+    color: white;
+    float: right;
+    margin-top: 50px;
 }
