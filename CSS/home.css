@@ -24,9 +24,6 @@ body{
     margin-bottom: 15px;
     height: 500px;
 }
-.col-md-5:first-child{
-    margin-right: 190px;
-}
 
 .fotologo{
     width: 190px;
@@ -67,7 +64,6 @@ input{
         
 .search-barra{
     float: left;
-    margin-top: 20px;
 }
 
 .barra{
