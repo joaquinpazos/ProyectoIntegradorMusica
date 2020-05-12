@@ -106,3 +106,23 @@ input{
     float: right;
     margin-top: 50px;
 }
+.segundo-contenedor{
+    padding-right: 100px;
+    padding-left: 100px;
+    overflow: hidden;
+}
+.tracks-2{
+    width: 500px;
+    float: left;
+    border: 1px solid white;
+    height: 200px;
+}
+.artistas-2{
+    width: 500px;
+    float: left;
+    border: 1px solid white;
+    height: 200px;
+}
+.artistas-2 ul li{
+    color: white;
+}
