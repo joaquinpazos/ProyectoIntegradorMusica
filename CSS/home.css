@@ -100,6 +100,7 @@ input{
 }
 .titulo{
     color: white;
+    margin-left: 10px;
 }
 .nombres{
     color: white;
@@ -112,17 +113,37 @@ input{
     overflow: hidden;
 }
 .tracks-2{
-    width: 500px;
+    width: 485px;
     float: left;
-    border: 1px solid white;
-    height: 200px;
+    border:  solid white;
+    height: 250px;
 }
 .artistas-2{
-    width: 500px;
+    width: 485px;
     float: left;
-    border: 1px solid white;
-    height: 200px;
+    border: solid white;
+    height: 250px;
 }
 .artistas-2 ul li{
     color: white;
+}
+.tracks-2 ul li{
+    color: white;
+}
+.tracks-2 ul {
+    list-style: none;
+    margin-left: 10px;
+    padding-left: 0;
+}
+.artistas-2 ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
+}
+.tracks-2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.tracks-2 ul li a:hover{
+    color: red;
 }
