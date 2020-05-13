@@ -114,15 +114,15 @@ input{
     overflow: hidden;
 }
 .tracks-2{
-    width: 485px;
+    width: 45%;
     float: left;
-    border:  solid white;
+    border: 1px solid white;
     height: 250px;
 }
 .artistas-2{
-    width: 487px;
-    float: left;
-    border: solid white;
+    width: 45%;
+    float: right;
+    border: 1px solid white;
     height: 250px;
 }
 .artistas-2 ul li{
