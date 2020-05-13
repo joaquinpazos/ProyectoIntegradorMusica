@@ -11,7 +11,9 @@ body{
     background-color: black;
     border-bottom: gray 1px groove;
 }
-
+.albumes{
+    border: 1px solid white;
+}
 
 .fotologo{
     width: 190px;
@@ -90,7 +92,6 @@ input{
 .contenedor{
     padding-right: 100px;
     padding-left: 100px;
-    
 }
 .fotos{
     margin-right: 56px;
@@ -119,7 +120,7 @@ input{
     height: 250px;
 }
 .artistas-2{
-    width: 485px;
+    width: 487px;
     float: left;
     border: solid white;
     height: 250px;
