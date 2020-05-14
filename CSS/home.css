@@ -92,12 +92,12 @@ input{
 .contenedor{
     padding-right: 100px;
     padding-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .fotos{
-    margin-right: 56px;
-}
-.fotos:last-child{
-    margin-right: 0;
+    width: 20%;
+    margin-right: 5%;
 }
 .titulo{
     color: white;
@@ -147,4 +147,21 @@ input{
 }
 .tracks-2 ul li a:hover{
     color: red;
+}
+.artistas-2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.artistas-2 ul li a:hover{
+    color: red;
+}
+.fotos-ultima{
+    width: 20%;
+    float: right;
+    margin-right: 1%;
+}
+.fotos-primera{
+    width: 20%;
+    margin-left: 1%;
+    margin-right: 5%;
 }
