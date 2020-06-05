@@ -1,6 +1,6 @@
-window.addEventListener("load",  canciones())
+window.addEventListener("load",  tracks())
 
-function canciones(){
+function tracks(){
     // https://cors-anywhere.herokuapp.com/https://api.deezer.com/METODO?PARAMETROS
     // api=  "?api_key=e35e31c137fc27d22a4259a7b0daea9b"
     // top 5 albumes de artistas var url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27/top"
@@ -24,6 +24,31 @@ function canciones(){
       ul.innerHTML += li
     }
   })
-}
+} 
+
+window.addEventListener("load",  artistas())
+
+function artistas(){
+
+  var url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists"
+
+  fetch(url)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data2){
+    console.log(data2);
+    var arrayDeArtistas= data2.data
+    var ul= document.querySelector("ul.artistas-ul");
+    var li
+    for(i=0 ; i < 4; i++){
+      li = "<li>"
+      li +=     "<a href='detalle.html?id=" + arrayDeArtistas[i].id +"'>" 
+      li +=        "<p>" + arrayDeArtistas[i].name + "</p>"
+      li += "</li>"
+      ul.innerHTML += li
+    }
+  })
+} 
 
 
