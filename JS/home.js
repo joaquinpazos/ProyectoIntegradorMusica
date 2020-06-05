@@ -13,6 +13,16 @@ function canciones(){
   })
   .then(function(data){
     console.log(data);
+    var arrayDeTracks= data.data
+    var ul= document.querySelector("ul.poster");
+    var li
+    for(i=0 ; i < 4; i++){
+      li = "<li>"
+      li +=     "<a href='detalle.html?id=" + arrayDeTracks[i].id +"'>" 
+      li +=        "<p>" + arrayDeTracks[i].title + "</p>"
+      li += "</li>"
+      ul.innerHTML += li
+    }
   })
 }
 
