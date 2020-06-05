@@ -111,6 +111,7 @@ input{
     padding-right: 100px;
     padding-left: 100px;
     overflow: hidden;
+    margin-top: 20px;
 }
 .tracks-2{
     width: 45%;
