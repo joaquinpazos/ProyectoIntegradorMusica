@@ -10,6 +10,7 @@ body{
 .menu{
     background-color: black;
     border-bottom: gray 1px groove;
+    margin-bottom: 23px;
 }
 .fotologo{
     width: 190px;
@@ -51,6 +52,20 @@ input{
 .barra{
     border-radius: 50px;
     width: 80%;
+}
+
+.uk-slider-items li{
+    text-align: center;
+    
+    
+}
+.uk-slider-items li h4{
+    color: grey; 
+    
+}
+.uk-slider-items li h6{
+    color: grey;
+    
 }
 
 .albumes img{
