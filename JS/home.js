@@ -50,5 +50,29 @@ function artistas(){
     }
   })
 } 
+window.addEventListener("load",  albumes())
+
+function albumes(){
+
+  var url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums"
+
+  fetch(url)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data3){
+    console.log(data3);
+    var arrayDeAlbumes= data3.data
+    var ul= document.querySelector("ul.albumes-ul");
+    var li
+    for(i=0 ; i < 4; i++){
+      li = "<li>"
+      li +=     "<a href='detalle.html?id=" + arrayDeAlbumes[i].id +"'>" 
+      li +=        "<p>" + arrayDeAlbumes[i].title + "</p>"
+      li += "</li>"
+      ul.innerHTML += li
+    }
+  })
+} 
 
 
