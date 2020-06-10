@@ -51,18 +51,44 @@ input{
     border-radius: 50px;
     width: 80%;
 }
-footer {
-    position: absolute;
-    bottom: 0;
+.container{
     width: 100%;
-    color: white;
-  }
-.nombres{
-    float: right;
-    margin-right: 10px;
-    margin-top: 30px;
 }
+.generos li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+} 
+
+.generos li a{
+    color: white;
+    text-decoration: none;
+    background: #7f8c8d;
+    display: inline-block;
+    margin: 7%;
+    padding: 30px 0px;
+    text-align: center;
+    width: 150px; 
+}
+
+
+
+
+
+
+
+
+footer {
+     align-self: flex-end;
+     line-height: 3;
+     width: 100%;
+     overflow: hidden;
+  }
 .deezer{
     width: 200px;
     height: 100px;
+}
+.nombres{
+    float: right;
+    color: white;
 }
