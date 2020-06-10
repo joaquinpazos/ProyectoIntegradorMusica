@@ -137,12 +137,18 @@ input{
 .albumes ul li a:hover{
     color: red;
 }
-.footer{
-    display: block;
-    bottom: 0;
+footer {
     position: absolute;
-}
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
 .deezer{
     width: 200px;
     height: 100px;
+}
+.nombres{
+    float: right;
+    margin-right: 10px;
+    margin-top: 40px;
 }
