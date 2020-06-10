@@ -11,10 +11,6 @@ body{
     background-color: black;
     border-bottom: gray 1px groove;
 }
-.albumes{
-    border: 1px solid white;
-}
-
 .fotologo{
     width: 190px;
     height: 60px;
@@ -42,14 +38,10 @@ body{
     font-weight: bold;
 }
 
-.menu ul li a:hover{
-background: black;
-}
-
 input{
     width: 50%;
     display: block;
-    margin: 22px 10px 10px 10px
+    margin: 22px 10px 10px 10px;
 }
         
 .search-barra{
@@ -59,35 +51,6 @@ input{
 .barra{
     border-radius: 50px;
     width: 80%;
-}
-.footer{
-    display: block;
-    bottom: 0;
-    position: absolute;
-}
-.deezer{
-    width: 200px;
-    height: 100px;
-}
-
-.tracks{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 10px;
-}
-.artistas{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 10px;
-}
-
-.carousel-contenedor{
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .albumes img{
@@ -113,55 +76,55 @@ input{
     overflow: hidden;
     margin-top: 20px;
 }
-.tracks-2{
+.tracks{
     width: 45%;
     float: left;
     border: 1px solid white;
     height: 250px;
 }
-.artistas-2{
+.artistas{
     width: 45%;
     float: right;
     border: 1px solid white;
     height: 250px;
 }
-.artistas-2 ul li{
+.artistas ul li{
     color: white;
 }
-.tracks-2 ul li{
+.tracks ul li{
     color: white;
 }
-.tracks-2 ul {
+.tracks ul {
     list-style: none;
     margin-left: 10px;
     padding-left: 0;
 }
-.artistas-2 ul{
+.artistas ul{
     list-style: none;
     padding-left: 0;
     margin-left: 10px;
 }
-.tracks-2 ul li a{
+.tracks ul li a{
     text-decoration: none;
     color: white;
 }
-.tracks-2 ul li a:hover{
+.tracks ul li a:hover{
     color: red;
 }
-.artistas-2 ul li a{
+.artistas ul li a{
     color: white;
     text-decoration: none;
 }
-.artistas-2 ul li a:hover{
+.artistas ul li a:hover{
     color: red;
 }
-.fotos-ultima{
-    width: 20%;
-    float: right;
-    margin-right: 1%;
+
+.footer{
+    display: block;
+    bottom: 0;
+    position: absolute;
 }
-.fotos-primera{
-    width: 20%;
-    margin-left: 1%;
-    margin-right: 5%;
+.deezer{
+    width: 200px;
+    height: 100px;
 }
