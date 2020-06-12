@@ -53,9 +53,11 @@ input{
     border-radius: 50px;
     width: 80%;
 }
+   
 
 .uk-slider-items li{
     text-align: center;
+    padding-bottom: 50px;
     
     
 }
@@ -67,6 +69,7 @@ input{
     color: grey;
     
 }
+
 
 .albumes img{
     padding-right: 30px;
@@ -88,21 +91,33 @@ input{
 .segundo-contenedor{
     padding-right: 50px;
     padding-left: 50px;
+    padding-top: 50px;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .tracks{
     width: 30%;
     float: left;
     border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
     height: 250px;
     margin-right: 5%;
+    
+}
+.tracks h1{
+    text-align: center;
 }
 .artistas{
     width: 30%;
     float: left;
     border: 1px solid white;
     height: 250px;
+    border-top: none;
+    border-bottom: none;
+}
+.artistas h1{
+    text-align: center;
 }
 .artistas ul li{
     color: white;
@@ -125,20 +140,25 @@ input{
     color: white;
 }
 .tracks ul li a:hover{
-    color: red;
+    color: indigo;
 }
 .artistas ul li a{
     color: white;
     text-decoration: none;
 }
 .artistas ul li a:hover{
-    color: red;
+    color:indigo;
 }
 .albumes{
     width: 30%;
     float: right;
     border: 1px solid white;
     height: 250px;
+    border-top: none;
+    border-bottom: none;
+}
+.albumes h1{
+    text-align: center;
 }
 .albumes ul{
     list-style: none;
@@ -150,7 +170,7 @@ input{
     text-decoration: none
 }
 .albumes ul li a:hover{
-    color: red;
+    color: indigo;
 }
 footer {
     align-self: flex-end;
