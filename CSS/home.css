@@ -1,6 +1,66 @@
+<<<<<<< HEAD
+=======
+body{
+    background-image: url(https://www.androidsis.com/wp-content/uploads/2019/06/Fondos-pantalla-oscuros-2.jpg);
+    background-size: 100%;
+    padding: 0px;
+    font-family: Arial;
+    min-height: 100vh;
+    font-family: 'Didact Gothic', sans-serif;
+    flex-wrap: wrap;
+}
+.menu{
+    background-color: black;
+    border-bottom: gray 1px groove;
+    margin-bottom: 23px;
+}
+.fotologo{
+    width: 190px;
+    height: 60px;
+    display: block;
+    margin-left: initial;
+    margin-right: auto;
+    padding-left: 20px;
+}
+        
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu ul li a{
+    color: white;
+    display: block;
+    padding: 22px;
+    padding-right: 40px;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+input{
+    width: 50%;
+    display: block;
+    margin: 22px 10px 10px 10px;
+}
+        
+.search-barra{
+    float: left;
+}
+
+.barra{
+    border-radius: 50px;
+    width: 80%;
+}
+   
+>>>>>>> 111f38e60e821f814105ed2c1b9821731feb6829
 
 .uk-slider-items li{
     text-align: center;
+    padding-bottom: 50px;
     
     
 }
@@ -12,6 +72,7 @@
     color: grey;
     
 }
+
 
 .albumes img{
     padding-right: 30px;
@@ -33,21 +94,33 @@
 .segundo-contenedor{
     padding-right: 50px;
     padding-left: 50px;
+    padding-top: 50px;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .tracks{
     width: 30%;
     float: left;
     border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
     height: 250px;
     margin-right: 5%;
+    
+}
+.tracks h1{
+    text-align: center;
 }
 .artistas{
     width: 30%;
     float: left;
     border: 1px solid white;
     height: 250px;
+    border-top: none;
+    border-bottom: none;
+}
+.artistas h1{
+    text-align: center;
 }
 .artistas ul li{
     color: white;
@@ -70,14 +143,14 @@
     color: white;
 }
 .tracks ul li a:hover{
-    color: red;
+    color: indigo;
 }
 .artistas ul li a{
     color: white;
     text-decoration: none;
 }
 .artistas ul li a:hover{
-    color: red;
+    color:indigo;
 }
 .artistas-ul li a img{
     overflow: hidden;
@@ -90,6 +163,11 @@
     float: right;
     border: 1px solid white;
     height: 250px;
+    border-top: none;
+    border-bottom: none;
+}
+.albumes h1{
+    text-align: center;
 }
 .albumes ul{
     list-style: none;
@@ -101,5 +179,5 @@
     text-decoration: none
 }
 .albumes ul li a:hover{
-    color: red;
+    color: indigo;
 }

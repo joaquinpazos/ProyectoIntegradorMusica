@@ -43,6 +43,9 @@ input{
     padding: 10px;
 } 
 
+.generos li :hover{
+    background-color: indigo;
+}
 .generos li a{
     color: white;
     text-decoration: none;
@@ -54,3 +57,20 @@ input{
     width: 200px;
 }
 
+<<<<<<< HEAD
+=======
+footer {
+     align-self: flex-end;
+     line-height: 3;
+     width: 100%;
+     overflow: hidden;
+  }
+.deezer{
+    width: 200px;
+    height: 100px;
+}
+.nombres{
+    float: right;
+    color: white;
+}
+>>>>>>> 111f38e60e821f814105ed2c1b9821731feb6829
