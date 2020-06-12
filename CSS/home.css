@@ -134,6 +134,12 @@ input{
 .artistas ul li a:hover{
     color: red;
 }
+.artistas-ul li a img{
+    overflow: hidden;
+}
+.artistas-ul li a img p{
+    float: right
+}
 .albumes{
     width: 30%;
     float: right;

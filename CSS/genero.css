@@ -51,7 +51,12 @@ input{
     border-radius: 50px;
     width: 80%;
 }
-.container{
+.container-generos{
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+}
+.generos{
     width: 100%;
 }
 .generos li{

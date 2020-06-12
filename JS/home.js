@@ -44,7 +44,8 @@ function artistas(){
     for(i=0 ; i < 4; i++){
       li = "<li>"
       li +=     "<a href='detalle.html?id=" + arrayDeArtistas[i].id +"'>" 
-      li +=        "<p>" + arrayDeArtistas[i].name + "</p>"
+      li +=        "<img src='" + arrayDeArtistas[i].picture_small + "' alt=''>" + "<p>" + arrayDeArtistas[i].name + "</p>"
+      li +=      "</a>"
       li += "</li>"
       ul.innerHTML += li
     }
@@ -68,7 +69,7 @@ function albumes(){
     for(i=0 ; i < 4; i++){
       li = "<li>"
       li +=     "<a href='detalle.html?id=" + arrayDeAlbumes[i].id +"'>" 
-      li +=        "<p>" + arrayDeAlbumes[i].title + "</p>"
+      li +=        "<img src='" + arrayDeAlbumes[i].cover_small + "' alt=''>" + "<p>" + arrayDeAlbumes[i].title + "</p>"
       li += "</li>"
       ul.innerHTML += li
     }
