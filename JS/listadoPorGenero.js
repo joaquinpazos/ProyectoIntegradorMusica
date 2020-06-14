@@ -22,3 +22,4 @@ function cancionesGenero() {
       ul.innerHTML += li
     }
   })
+}
