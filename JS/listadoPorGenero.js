@@ -16,7 +16,7 @@ function cancionesGenero() {
     for(i=0 ; i < 5; i++){
       li = "<li>"
       li +=    "<a href='detalle.html?id=" + arrayGenerosListado[i].id +"'>"
-      li +=     "<p>" + arrayDeArtistas[i].name + "</p>"
+      li +=     "<p>" + arrayGenerosListado[i].name + "</p>"
       li +=     "</a>"
       li += "</li>"
       ul.innerHTML += li
