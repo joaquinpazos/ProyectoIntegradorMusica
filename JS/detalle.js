@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
 
     function detalleCanciones(){
   
-      var urlDetalles = "https://api.deezer.com/chart/0/"+id
+      var urlDetalles = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/"+ id 
 
       fetch(urlDetalles)
       .then(function(response){
