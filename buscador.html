@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="JS/buscador.js"></script>
-</head>
+    <link rel="stylesheet" href="CSS/home.css">  
+    <link rel="stylesheet" href="CSS/headerfooter.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="JS/home.js"></script>
+    <title>LUXO</title>
+  </head>
 <body>
-    <ul class="resultados">
+        <header>
+          <div class="menu">
+            <ul>
+              <img class="fotologo" src="Images/logo.png" alt="">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="genero.html">Generos</a></li>
+              <li><a href="playlist.html" class="favorito">Playlist</a></li>
+              <div class="search-barra">
+                <form class="buscar" action="buscador.html" method="get">
+                  <input type="text" id="formulario" name="buscador" class="barra">
+                </form>
+              </div>
+            </ul>
+          </div>
+        </header>
+        <ul class="resultados">
         
-    </ul>
+        </ul>
 </body>
 </html>
