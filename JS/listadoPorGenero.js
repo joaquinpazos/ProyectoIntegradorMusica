@@ -4,7 +4,7 @@ function cancionesGenero() {
   var searchParams = new URLSearchParams(queryString);
   var id = searchParams.get("id")
 
-  fetch("https://api.deezer.com/genre/0/artists"+id)
+  fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" +id+ "/artists")
   .then(function(response){
     return response.json();
   })
