@@ -13,8 +13,9 @@ var loQueBuscoElUsuario = queryStringObj.get('buscador');
 
     console.log(resultados);
     var contenido = "";
-    for (var i = 0; i < resultados.data.length; i++) {
+    for (var i = 0; i < 5; i++) {
         var canciones = resultados.data[i];
+    
 
         
        //contenido += "<ul>"
