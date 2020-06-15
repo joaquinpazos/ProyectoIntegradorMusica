@@ -17,7 +17,7 @@ var loQueBuscoElUsuario = queryStringObj.get('buscador');
         var canciones = resultados.data[i];
 
         
-       // contenido += "<ul>"
+       //contenido += "<ul>"
         contenido +=    "<li>" + canciones.title + "</li>"
         //contenido += "<ul>"
         
