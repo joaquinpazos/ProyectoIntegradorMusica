@@ -1,20 +1,19 @@
 window.addEventListener("load", function(){
     var urlParams = new URLSearchParams(window.location.search);
     var id = urlParams.get('id');
-    console.log(id);
+    var type = urlParams.get('type');
+    console.log(type);
 
-    detalleArtista()
-    function detalleArtista(){
-  
-      var urlDetalles = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/"+ id 
+    var urlGeneral= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/" + type +  "/"+ id
 
-      fetch(urlDetalles)
+  if (type == "track") {
+    fetch(urlGeneral)
       .then(function(response){
-        return response.json();
+          return response.json();
       })
-      .then(function(data6){
-        console.log(data6);
-        var track = data6;
+      .then(function(data){
+        console.log(data);
+        var track = data;
         var ul= document.querySelector("ul.lista-detalles");
         var li = ""
         var generos = ""
@@ -22,9 +21,11 @@ window.addEventListener("load", function(){
           li +=    "<p> Title: "+track.title+"</p>"
           li += "</li>"
           ul.innerHTML += li
-
+          
           document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
-
+          
+        })
+    }
           //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
           var arrayDePlaylist = JSON.parse(window.sessionStorage.getItem("arrayDePlaylist"))
           if (arrayDePlaylist != null && arrayDePlaylist.length>0){
@@ -33,8 +34,8 @@ window.addEventListener("load", function(){
   
             }
           }
-        })
-    }
+   
+ 
       //cierran la funcion
 })
 
@@ -68,4 +69,3 @@ function agregarPlaylist(id) {
   }
   console.log(JSON.parse(window.sessionStorage.getItem("arrayDePlaylist")));
 }
-
