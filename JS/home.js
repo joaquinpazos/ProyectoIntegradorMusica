@@ -16,7 +16,7 @@ function tracks(){
     var arrayDeTracks= data.data
     var ul= document.querySelector("ul.poster");
     var li
-    for(i=0 ; i < 4; i++){
+    for(i=0 ; i < 5; i++){
       li = "<li>" 
       li +=     "<a href='detalle.html?id=" + arrayDeTracks[i].id + "&type=track" + "'>"  
       li +=        "<p>" + arrayDeTracks[i].title + "</p>"
@@ -41,10 +41,10 @@ function artistas(){
     var arrayDeArtistas= data2.data
     var ul= document.querySelector("ul.artistas-ul");
     var li
-    for(i=0 ; i < 4; i++){
+    for(i=0 ; i < 5; i++){
       li = "<li>"
       li +=     "<a href='detalle.html?id=" + arrayDeArtistas[i].id + "&type=artist" +"'>"   
-      li +=        "<img src='" + arrayDeArtistas[i].picture_small + "' alt=''>" + "<p>" + arrayDeArtistas[i].name + "</p>"
+      li +=        "<p>" + arrayDeArtistas[i].name + "</p>"
       li +=      "</a>"
       li += "</li>"
       ul.innerHTML += li
@@ -66,10 +66,10 @@ function albumes(){
     var arrayDeAlbumes= data3.data
     var ul= document.querySelector("ul.albumes-ul");
     var li
-    for(i=0 ; i < 4; i++){
+    for(i=0 ; i < 5; i++){
       li = "<li>"
       li +=     "<a href='detalle.html?id=" + arrayDeAlbumes[i].id + "&type=album" + "'>" 
-      li +=        "<img src='" + arrayDeAlbumes[i].cover_small + "' alt=''>" + "<p>" + arrayDeAlbumes[i].title + "</p>"
+      li +=       "<p>" + arrayDeAlbumes[i].title + "</p>"
       li += "</li>"
       ul.innerHTML += li
     }
