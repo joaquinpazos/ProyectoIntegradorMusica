@@ -57,15 +57,23 @@ input{
 
 footer {
     align-self: flex-end;
-    line-height: 3;
+    line-height: 1;
     width: 100%;
     overflow: hidden;
+    border-top: gray 1px groove;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.445);
+    
  }
 .deezer{
    width: 200px;
    height: 100px;
+   margin-top: 5px;
+
 }
 .nombres{
    float: right;
    color: white;
+   padding-right: 30px;
+   padding-bottom: 30px;
 }

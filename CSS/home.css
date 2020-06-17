@@ -14,7 +14,6 @@
     
 }
 
-
 .albumes img{
     padding-right: 30px;
     margin-left: 115px;
@@ -26,12 +25,46 @@
 .titulo{
     color: white;
     margin-left: 10px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
+    
 }
+
+@-webkit-keyframes glow2 {
+    from {
+      text-shadow: 0 0 10px rgb(109, 109, 109), 0 0 20px rgb(109, 109, 109), 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px #51009c;
+    }
+    to {
+      text-shadow: 0 0 20px rgb(109, 109, 109), 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px#51009c, 0 0 20px#51009c, 0 0 20px#51009c, 0 0 20px #51009c;
+    }
+  }
 .nombres{
     color: white;
     float: right;
     margin-top: 50px;
 }
+.todattops h1{
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+    margin-top: 100px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(109, 109, 109), 0 0 20px rgb(109, 109, 109), 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px #51009c;
+    }
+    to {
+      text-shadow: 0 0 20px rgb(109, 109, 109), 0 0 20px #51009c, 0 0 20px #51009c, 0 0 20px#51009c, 0 0 20px#51009c, 0 0 20px#51009c, 0 0 20px #51009c;
+    }
+  }
+
 .segundo-contenedor{
     padding-right: 50px;
     padding-left: 50px;
@@ -43,10 +76,9 @@
     width: 30%;
     float: left;
     border: 1px solid white;
-    border-top: none;
-    border-bottom: none;
     height: 250px;
     margin-right: 5%;
+    border-radius: 5%;
     
 }
 .tracks h1{
@@ -55,9 +87,11 @@
 .artistas{
     width: 30%;
     float: left;
+    height: 250px;
     border: 1px solid white;
-    border-top: none;
-    border-bottom: none;
+    border-radius: 5%;
+    background-color: black;
+    
 }
 .artistas h1{
     text-align: center;
@@ -103,8 +137,7 @@
     float: right;
     border: 1px solid white;
     height: 250px;
-    border-top: none;
-    border-bottom: none;
+    border-radius: 5%;
 }
 .albumes h1{
     text-align: center;
