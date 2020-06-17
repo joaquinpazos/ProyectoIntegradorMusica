@@ -18,7 +18,10 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
-            li +=    "<p> Title: "+track.title+"</p>"
+            li +=    "<p class='title' > Title: "+track.title+"</p>"
+            li +=    "<p class= 'album' > Album: "+track.album.title+"</p>"
+            li +=    "<p class= 'fecha'> Release Date: "+track.release_date+"</p>"
+            li +=    "<p class= 'duration'> Duration: "+track.duration+ " segundos" + "</p>"
             li += "</li>"
             ul.innerHTML += li
             
@@ -47,10 +50,11 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
-            li +=    "<p> Title: "+artist.name+"</p>"
+            li +=    "<p> Name: "+artist.name+"</p>"
             li += "</li>"
             ul.innerHTML += li
             
+            document.querySelector("button.boton-favoritos").style.display= "none"
           })
       } 
 
@@ -65,10 +69,13 @@ window.addEventListener("load", function(){
             var ul= document.querySelector("ul.lista-detalles");
             var li = ""
               li = "<li>"
-              li +=    "<p> Title: "+album.name+"</p>"
+              li +=    "<p class= 'title'> Title: "+album.title+"</p>"
+              li +=    "<p class= 'artist'> Artist: "+album.artist.name+"</p>"
+              li +=    "<p class= 'fecha'> Release Date: "+album.release_date+"</p>"
               li += "</li>"
               ul.innerHTML += li
-                        
+              
+              document.querySelector("button.boton-favoritos").style.display= "none"
             })
         }
       //cierran la funcion
