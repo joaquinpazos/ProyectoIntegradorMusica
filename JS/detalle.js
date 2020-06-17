@@ -6,36 +6,71 @@ window.addEventListener("load", function(){
 
     var urlGeneral= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/" + type +  "/"+ id
 
-  if (type == "track") {
-    fetch(urlGeneral)
-      .then(function(response){
-          return response.json();
-      })
-      .then(function(data){
-        console.log(data);
-        var track = data;
-        var ul= document.querySelector("ul.lista-detalles");
-        var li = ""
-        var generos = ""
-          li = "<li>"
-          li +=    "<p> Title: "+track.title+"</p>"
-          li += "</li>"
-          ul.innerHTML += li
-          
-          document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
-          
+    if (type == "track") {
+      fetch(urlGeneral)
+        .then(function(response){
+            return response.json();
         })
-    }
-          //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
-          var arrayDePlaylist = JSON.parse(window.sessionStorage.getItem("arrayDePlaylist"))
-          if (arrayDePlaylist != null && arrayDePlaylist.length>0){
-            if (arrayDePlaylist.indexOf(track.id)!= -1) {
-              document.querySelector("button.boton-favoritos").innerText = "Eliminar de Playlist"
-  
+        .then(function(data){
+          console.log(data);
+          var track = data;
+          var ul= document.querySelector("ul.lista-detalles");
+          var li = ""
+          var generos = ""
+            li = "<li>"
+            li +=    "<p> Title: "+track.title+"</p>"
+            li += "</li>"
+            ul.innerHTML += li
+            
+            document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
+            
+            //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
+            var arrayDePlaylist = JSON.parse(window.sessionStorage.getItem("arrayDePlaylist"))
+            if (arrayDePlaylist != null && arrayDePlaylist.length>0){
+              if (arrayDePlaylist.indexOf(track.id)!= -1) {
+                document.querySelector("button.boton-favoritos").innerText = "Eliminar de Playlist"
+                
+              }
             }
-          }
-   
- 
+            
+          })
+      }
+    if (type == "artist") {
+      fetch(urlGeneral)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+          console.log(data);
+          var artist = data;
+          var ul= document.querySelector("ul.lista-detalles");
+          var li = ""
+          var generos = ""
+            li = "<li>"
+            li +=    "<p> Title: "+artist.name+"</p>"
+            li += "</li>"
+            ul.innerHTML += li
+            
+          })
+      } 
+
+      if (type == "album") {
+        fetch(urlGeneral)
+          .then(function(response){
+              return response.json();
+          })
+          .then(function(data){
+            console.log(data);
+            var album = data;
+            var ul= document.querySelector("ul.lista-detalles");
+            var li = ""
+              li = "<li>"
+              li +=    "<p> Title: "+album.name+"</p>"
+              li += "</li>"
+              ul.innerHTML += li
+                        
+            })
+        }
       //cierran la funcion
 })
 

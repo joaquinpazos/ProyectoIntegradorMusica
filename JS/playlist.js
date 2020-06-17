@@ -21,7 +21,7 @@ window.addEventListener("load",function () {
         var li = ""
         var generos = ""
           li = "<li>"
-          li +=  "<a href='detalle.html?id="+ id + "'>"
+          li +=     "<a href='detalle.html?id=" + id + "&type=track" +"'>"
           li +=    "<p> Title: "+track.title+"</p>"
           li +=    "</a>"
           li += "</li>"
