@@ -50,7 +50,8 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
-            li +=    "<p> Name: "+artist.name+"</p>"
+            li +=    "<p class='title'> Name: "+artist.name+"</p>"
+            li +=    "<p class='fans'> Fans: "+artist.nb_fan+"</p>"
             li += "</li>"
             ul.innerHTML += li
             
