@@ -5,7 +5,7 @@ window.addEventListener("load", function(){
     console.log(type);
 
     var urlGeneral= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/" + type +  "/"+ id
-
+    var urlTop5= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + id +  "/top"
     if (type == "track") {
       fetch(urlGeneral)
         .then(function(response){
@@ -18,6 +18,8 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
+            li +=   "<p> Track " + "</p>"
+            li +=   "<img src='"+ track.album.cover_medium + "' alt=''>"
             li +=    "<p class='title' > Title: "+track.title+"</p>"
             li +=    "<p class= 'album' > Album: "+track.album.title+"</p>"
             li +=    "<p class= 'fecha'> Release Date: "+track.release_date+"</p>"
@@ -25,6 +27,7 @@ window.addEventListener("load", function(){
             li += "</li>"
             ul.innerHTML += li
             
+            document.querySelector("ul.top-5").style.display= "none"
             document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
             
             //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
@@ -35,8 +38,8 @@ window.addEventListener("load", function(){
                 
               }
             }
-            
           })
+        
       }
     if (type == "artist") {
       fetch(urlGeneral)
@@ -50,14 +53,36 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
+            li +=   "<p> Artist " + "</p>"
+            li +=   "<img src='"+ artist.picture_medium + "' alt=''>"
             li +=    "<p class='title'> Name: "+artist.name+"</p>"
-            li +=    "<p class='fans'> Fans: "+artist.nb_fan+"</p>"
+            li +=    "<p class= 'fans'> Fans: " + artist.nb_fan+ "</p>"
             li += "</li>"
             ul.innerHTML += li
             
             document.querySelector("button.boton-favoritos").style.display= "none"
           })
-      } 
+    var urlTop5= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + id + "/top"
+    fetch(urlTop5)
+      .then(function(response){
+          return response.json();
+      })
+      .then(function(data2){
+        console.log(data2);
+        var artist = data2;
+        var ul= document.querySelector("ul.top-5");
+        var li = ""
+        for(i=0 ; i < 5; i++){
+          li = "<li>"
+          li +=    "<p class='top5'>"+artist.data[i].title + "</p>"
+          li += "</li>"
+          ul.innerHTML += li
+        }
+          document.querySelector("button.boton-favoritos").style.display= "none"
+        })
+      
+        } 
+
 
       if (type == "album") {
         fetch(urlGeneral)
@@ -70,12 +95,15 @@ window.addEventListener("load", function(){
             var ul= document.querySelector("ul.lista-detalles");
             var li = ""
               li = "<li>"
+              li +=   "<p> Album " + "</p>"
+              li +=    "<img src='"+ album.cover_medium + "' alt=''>"
               li +=    "<p class= 'title'> Title: "+album.title+"</p>"
               li +=    "<p class= 'artist'> Artist: "+album.artist.name+"</p>"
               li +=    "<p class= 'fecha'> Release Date: "+album.release_date+"</p>"
               li += "</li>"
               ul.innerHTML += li
               
+              document.querySelector("ul.top-5").style.display= "none"
               document.querySelector("button.boton-favoritos").style.display= "none"
             })
         }
