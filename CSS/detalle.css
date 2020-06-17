@@ -1,0 +1,16 @@
+.resultados{
+    margin:  100px 100px 100px 100px;
+}
+.resultados ul{
+    list-style: none;
+}
+
+.resultados .lista-detalles li img{
+    float: right;
+    height: 250px;
+    margin-right: 5%;
+}
+.boton-favoritos{
+    margin-left: 3%;
+}
+
