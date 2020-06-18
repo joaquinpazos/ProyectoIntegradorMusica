@@ -1,8 +1,9 @@
 window.addEventListener("load",function () {
     var playlist =  JSON.parse(window.sessionStorage.getItem("arrayDePlaylist"))
     console.log(playlist.length);
-  
-    for (var i = 0; i < playlist.length; i++) {
+
+  if(localStorage.getItem("playlist") != 0){
+  for (var i = 0; i < playlist.length; i++) {
       var id = playlist[i]
   
     detalleArtista()
@@ -29,10 +30,20 @@ window.addEventListener("load",function () {
          }
         )
         document.querySelector("div.reproducir").innerHTML= '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=92&color=007FEB&layout=dark&size=medium&type=tracks&id=' + id + '&app_id="416702" width="700" height="92"></iframe>'
-        }
+        document.querySelector(".imagen").style.display= "none"
+        document.querySelector(".no-contenido").style.display= "none"
+      }
     }
+  
+  
+  }else{
+    alert("Aun no tienes playlist")
+    document.querySelector(".contenido").style.display= "none"
+    document.querySelector("no-playlist").style.display= "block"
+  }
 }
 )
+
 
 
 
