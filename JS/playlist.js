@@ -28,6 +28,7 @@ window.addEventListener("load",function () {
           ul.innerHTML += li
          }
         )
+        document.querySelector("div.reproducir").innerHTML= '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + id + '&app_id="416702" width="700" height="350"></iframe>'
         }
     }
 }

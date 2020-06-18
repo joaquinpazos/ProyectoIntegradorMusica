@@ -26,7 +26,7 @@ window.addEventListener("load", function(){
             li +=    "<p class= 'duration'> Duration: "+track.duration+ " segundos" + "</p>"
             li += "</li>"
             ul.innerHTML += li
-            
+           
             document.querySelector("ul.top-5").style.display= "none"
             document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
             
