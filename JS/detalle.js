@@ -18,7 +18,6 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
-            li +=   "<p> Track " + "</p>"
             li +=   "<img src='"+ track.album.cover_medium + "' alt=''>"
             li +=    "<p class='title' > Title: "+track.title+"</p>"
             li +=    "<p class= 'album' > Album: "+track.album.title+"</p>"
@@ -53,7 +52,6 @@ window.addEventListener("load", function(){
           var li = ""
           var generos = ""
             li = "<li>"
-            li +=   "<p> Artist " + "</p>"
             li +=   "<img src='"+ artist.picture_medium + "' alt=''>"
             li +=    "<p class='title'> Name: "+artist.name+"</p>"
             li +=    "<p class= 'fans'> Fans: " + artist.nb_fan+ "</p>"
@@ -95,7 +93,6 @@ window.addEventListener("load", function(){
             var ul= document.querySelector("ul.lista-detalles");
             var li = ""
               li = "<li>"
-              li +=   "<p> Album " + "</p>"
               li +=    "<img src='"+ album.cover_medium + "' alt=''>"
               li +=    "<p class= 'title'> Title: "+album.title+"</p>"
               li +=    "<p class= 'artist'> Artist: "+album.artist.name+"</p>"
