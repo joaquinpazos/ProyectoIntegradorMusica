@@ -6,6 +6,7 @@ window.addEventListener("load", function(){
 
     var urlGeneral= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/" + type +  "/"+ id
     var urlTop5= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + id +  "/top"
+
     if (type == "track") {
       fetch(urlGeneral)
         .then(function(response){
@@ -25,9 +26,21 @@ window.addEventListener("load", function(){
             li +=    "<p class= 'duration'> Duration: "+track.duration+ " segundos" + "</p>"
             li += "</li>"
             ul.innerHTML += li
-           
+            
+            
+            document.querySelector(".resultados ul li").style.paddingTop= "50px"
+            document.querySelector(".resultados ul li img").style.marginRight= "50px"
+            document.querySelector(".resultados ul li img").style.marginTop= "25px"
+            document.querySelector(".resultados button").style.marginLeft= "347px"
+            document.querySelector(".resultados").style.border="1px solid white"
+            document.querySelector(".resultados").style.borderRadius="30px"
+            document.querySelector(".resultados").style.backgroundColor="black"
+            document.querySelector(".resultados").style.width= "40%"
+            document.querySelector(".resultados").style.marginLeft= "590px"
+            document.querySelector(".resultados").style.paddingBottom= "30px"
             document.querySelector("ul.top-5").style.display= "none"
             document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
+
             
             //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
             var arrayDePlaylist = JSON.parse(window.sessionStorage.getItem("arrayDePlaylist"))
@@ -58,6 +71,24 @@ window.addEventListener("load", function(){
             li += "</li>"
             ul.innerHTML += li
             
+            document.querySelector(".top-5").style.float= "none"
+            document.querySelector(".top-5").style.marginLeft= "63%"
+            document.querySelector(".top-5").style.marginTop= "42px"
+            document.querySelector("ul.top-5").style.color= "white"
+            document.querySelector("ul.top-5 h1").style.color= "white"
+            document.querySelector(".lista-detalles p.title").style.marginRight= "10px"
+            document.querySelector(".resultados").style.marginLeft= "20%"
+            document.querySelector(".resultados").style.backgroundColor="black"
+            document.querySelector(".resultados li").style.marginLeft= "23px"
+            document.querySelector(".resultados li").style.marginRight= "30px"
+            document.querySelector(".resultados").style.border= "1px solid white"
+            document.querySelector(".resultados").style.borderRadius="30px"
+            document.querySelector(".resultados").style.width= "40%"
+            document.querySelector(".resultados").style.marginLeft= "570px"
+            document.querySelector(".resultados ul li img").style.marginRight= "70px"
+            document.querySelector(".resultados ul li img").style.marginLeft= "-3px"
+            document.querySelector(".resultados ul li img").style.marginTop= "34px"
+            document.querySelector(".resultados ul li img").style.width= "55%"
             document.querySelector("button.boton-favoritos").style.display= "none"
           })
     var urlTop5= "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + id + "/top"

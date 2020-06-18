@@ -12,7 +12,8 @@ function generos(){
       var li
       for(i=0 ; i < 28; i++){
         li = "<li>"
-        li +=     "<a href='listadoPorGenero.html?id=" + arrayDeGeneros[i].id +"'>" 
+        li +=     "<a href='listadoPorGenero.html?id=" + arrayDeGeneros[i].id + "'>" 
+        li +=   "<img src='"+ arrayDeGeneros[i].picture+ "' alt=''>"
         li +=        "<p>" + arrayDeGeneros[i].name + "</p>"
         li += "</li>"
         ul.innerHTML += li

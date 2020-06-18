@@ -21,3 +21,11 @@
 .top-5{
     float: right;
 }
+
+.lista-detalles p{
+    color: white;
+}
+
+.lista-detalles p.title{
+    font-size: xx-large;
+}
