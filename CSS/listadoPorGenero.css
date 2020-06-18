@@ -1,0 +1,27 @@
+.container{
+    width: 800px;
+    height: 600px;
+    border: solid 0.5px white;
+    margin-left: 30%;
+    margin-top: 6%;
+    background-image: url(../Images/fondo\ generos.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.listado{
+    list-style-type: none;
+    padding-top: 120px;
+    padding-right: 40px;
+    
+}
+
+.listado a{
+    color:white;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+    
+}

@@ -38,6 +38,7 @@ input{
     width: 100%;
     overflow: hidden;
     margin: 10px;
+    margin-bottom: 7%;
 }
 .generos{
     width: 100%;
@@ -49,7 +50,7 @@ input{
 } 
 
 .generos li :hover{
-    background-color: indigo;
+    background-color: rgba(0, 0, 0, 0.267);
 }
 .generos li a{
     color: black;
