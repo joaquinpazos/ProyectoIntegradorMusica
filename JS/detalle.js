@@ -26,7 +26,7 @@ window.addEventListener("load", function(){
             li += "</li>"
             ul.innerHTML += li
            
-            document.querySelector("ul.top-5").style.display= "none"
+            document.querySelector("ul.top-5").style.display= "none" 
             document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
             
             //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
