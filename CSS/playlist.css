@@ -13,4 +13,32 @@ ul.playlist{
 }
 .contenido{
     height: 550px;
+
+}
+ul.listado{
+    padding-left: 0;
+}
+.canciones{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 180px;
+    margin: 10%;
+    margin-top: 0;
+}
+.canciones ul li{
+    text-align: center;
+    list-style: none;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 10px;
+}
+.titulo{
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 50px;
 }
