@@ -13,7 +13,7 @@ function cancionesGenero() {
     var arrayGenerosListado = data5.data;
     var ul= document.querySelector("ul.listado");
     var li
-    for(i=0 ; i < 5; i++){
+    for(i=0 ; i < 10; i++){
       li = "<li>"
       li +=    "<a href='detalle.html?id=" + arrayGenerosListado[i].id  + "&type=artist" +"'>"
       li +=     "<p>" + arrayGenerosListado[i].name + "</p>"
