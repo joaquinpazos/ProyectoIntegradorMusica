@@ -38,7 +38,7 @@ function generos(){
       var li
       for(i=0 ; i < 1; i++){
         li = "<li>"
-        li +=      "<p>" + arrayDeGeneros[i].picture_small + "</p>"
+        li +=      "" + arrayDeGeneros[i].picture_small + "</p>"
         li += "</li>"
         ul.innerHTML += li
       }
