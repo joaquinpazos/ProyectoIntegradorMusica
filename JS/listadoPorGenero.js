@@ -15,7 +15,7 @@ function cancionesGenero() {
     var li
     for(i=0 ; i < 10; i++){
       li = "<li>"
-      li +=    "<a href='detalle.html?id=" + arrayGenerosListado[i].id  + "&type=artist" +"'>"
+      li +=     "<a href='detalle.html?id=" + arrayGenerosListado[i].id  + "&type=artist" +"'>"
       li +=     "<p>" + arrayGenerosListado[i].name + "</p>"
       li +=     "</a>"
       li += "</li>"
@@ -23,25 +23,6 @@ function cancionesGenero() {
     }
   })
 }
-/* 
-window.addEventListener("load",  generos())
-function generos(){
-    var url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"
-    fetch(url)
-    .then(function(response){
-    return response.json();
-    })
-    .then(function(genero){
-      console.log(genero);
-      var arrayDeGeneros= genero.data
-      var ul= document.querySelector("ul.listado");
-      var li
-      for(i=0 ; i < 1; i++){
-        li = "<li>"
-        li +=    "<img src='"+ arrayDeGeneros[i].picture_medium + "' alt=''>"
-        li += "</li>"
-        ul.innerHTML += li
-      }
-    }) 
-} 
- */
+
+
+
