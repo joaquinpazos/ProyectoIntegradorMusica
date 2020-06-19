@@ -16,6 +16,9 @@ window.addEventListener("load", function(){
           console.log(data);
           var track = data;
           var ul= document.querySelector("ul.lista-detalles");
+          var minutos= Math.floor(track.duration/60);
+          var segundos= track.duration - minutos * 60;
+          var duracionTotal= minutos + ":" + segundos
           var li = ""
           var generos = ""
             li = "<li>"
@@ -25,7 +28,7 @@ window.addEventListener("load", function(){
             li +=    "<p class= 'album' > Album: "+track.album.title+"</p>"
             li +=    "</a>"
             li +=    "<p class= 'fecha'> Release Date: "+track.release_date+"</p>"
-            li +=    "<p class= 'duration'> Duration: "+track.duration + " segundos" + "</p>"
+            li +=    "<p class= 'duration'> Duration: "+ duracionTotal + "</p>"
             li += "</li>"
             ul.innerHTML += li
             
