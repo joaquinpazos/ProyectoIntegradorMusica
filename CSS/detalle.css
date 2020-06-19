@@ -29,3 +29,14 @@
 .lista-detalles p.title{
     font-size: xx-large;
 }
+
+p.album:hover{
+    text-decoration: none;
+    color: violet;
+}
+.top5{
+    color: white;
+}
+.top5:hover{
+    color: violet;
+}

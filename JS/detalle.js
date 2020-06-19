@@ -25,7 +25,7 @@ window.addEventListener("load", function(){
             li +=    "<p class= 'album' > Album: "+track.album.title+"</p>"
             li +=    "</a>"
             li +=    "<p class= 'fecha'> Release Date: "+track.release_date+"</p>"
-            li +=    "<p class= 'duration'> Duration: "+track.duration+ " segundos" + "</p>"
+            li +=    "<p class= 'duration'> Duration: "+track.duration + " segundos" + "</p>"
             li += "</li>"
             ul.innerHTML += li
             
@@ -33,12 +33,12 @@ window.addEventListener("load", function(){
             document.querySelector(".resultados ul li").style.paddingTop= "50px"
             document.querySelector(".resultados ul li img").style.marginRight= "50px"
             document.querySelector(".resultados ul li img").style.marginTop= "25px"
-            document.querySelector(".resultados button").style.marginLeft= "347px"
+            document.querySelector(".resultados button").style.marginLeft= "30%"
             document.querySelector(".resultados").style.border="1px solid white"
             document.querySelector(".resultados").style.borderRadius="30px"
             document.querySelector(".resultados").style.backgroundColor="black"
             document.querySelector(".resultados").style.width= "40%"
-            document.querySelector(".resultados").style.marginLeft= "590px"
+            document.querySelector(".resultados").style.marginLeft= "30%"
             document.querySelector(".resultados").style.paddingBottom= "30px"
             document.querySelector("ul.top-5").style.display= "none"
             document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
@@ -86,7 +86,7 @@ window.addEventListener("load", function(){
             document.querySelector(".resultados").style.border= "1px solid white"
             document.querySelector(".resultados").style.borderRadius="30px"
             document.querySelector(".resultados").style.width= "40%"
-            document.querySelector(".resultados").style.marginLeft= "570px"
+            document.querySelector(".resultados").style.marginLeft= "30%"
             document.querySelector(".resultados ul li img").style.marginRight= "70px"
             document.querySelector(".resultados ul li img").style.marginLeft= "-3px"
             document.querySelector(".resultados ul li img").style.marginTop= "34px"
