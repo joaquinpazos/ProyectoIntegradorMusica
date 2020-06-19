@@ -34,8 +34,8 @@ window.addEventListener("load", function(){
 
     }
   }else{
+  alert("Tu playlist se encuentra vacia");
   document.querySelector(".h1").style.display= "none"
-  alert("Tu playlist se encuentra vacia")
 }
 })
 
