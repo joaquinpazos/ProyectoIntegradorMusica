@@ -55,7 +55,7 @@ input{
 }
 
 
-footer {
+.contenido-footer {
     align-self: flex-end;
     line-height: 1;
     width: 100%;
@@ -76,5 +76,14 @@ footer {
    color: white;
    padding-right: 30px;
    padding-bottom: 30px;
+   margin-top: 3%;
 }
 
+.social-bar img{
+    height: 30px;
+    border-radius: 10px;
+}
+.social-bar{
+    float: right;
+    margin-top: 3%;
+}
