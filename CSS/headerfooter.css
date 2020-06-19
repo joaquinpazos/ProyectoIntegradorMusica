@@ -78,18 +78,3 @@ footer {
    padding-bottom: 30px;
 }
 
-@media only screen and (min-width:400px) and (max-width; 767px){
-    header{
-        height: 70px;
-    }
-    .fotologo{
-        font-size: 30px;
-        margin-left: 130px;
-        margin-top: -15px;
-    }
-    .menu{ 
-        margin-top: -40px;
-        transform: translateX(-3%);
-
-    }
-}
