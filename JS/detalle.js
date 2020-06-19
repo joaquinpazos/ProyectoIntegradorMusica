@@ -41,7 +41,9 @@ window.addEventListener("load", function(){
             document.querySelector(".resultados").style.marginLeft= "30%"
             document.querySelector(".resultados").style.paddingBottom= "30px"
             document.querySelector("ul.top-5").style.display= "none"
+            document.querySelector("button.boton-favoritos").style.marginLeft= "45.5%"
             document.querySelector("button.boton-favoritos").setAttribute("onclick","agregarPlaylist("+track.id+")")
+
 
             
             //ME FIJO SI LA CANCION ESTA EN MI PLAYLIST CUANDO CARGA LA PAGINA
