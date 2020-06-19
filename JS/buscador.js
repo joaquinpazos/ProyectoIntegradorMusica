@@ -4,6 +4,7 @@ window.onload = function () {
 
 var loQueBuscoElUsuario = queryStringObj.get('buscador');
 
+
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=" + loQueBuscoElUsuario)
 .then(function (data) {
     return data.json();
@@ -12,17 +13,9 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
 
     //lo que yo quiera con los resultados
 
-    var loader = document.getElementById('#onload');
-
-    window.addEventListener ("load", function() {
-    //Esconder el spinner dsp de 2 segundos
-    setTimeout(function(){loader.style.display = 'none';}, 2000);
-
-});
-
     console.log(resultados);
     var contenido = "";
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 1; i++) {
         var canciones = resultados.data[i];
 
         
@@ -32,8 +25,11 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q
         
     
     }
+
     var contenedor = document.querySelector('.resultados')
     contenedor.innerHTML = contenido
+    document.querySelector(".ul li").style.listStyleType= "none"
+
 
     
 })

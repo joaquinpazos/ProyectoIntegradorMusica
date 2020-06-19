@@ -137,6 +137,20 @@ window.addEventListener("load", function(){
               li += "</li>"
               ul.innerHTML += li
               
+              document.querySelector(".resultados").style.marginLeft= "20%"
+              document.querySelector(".resultados").style.backgroundColor="black"
+              document.querySelector(".resultados li").style.marginLeft= "3px"
+              document.querySelector(".resultados li").style.marginRight= "53px"
+              document.querySelector(".lista-detalles p.title").style.paddingTop= "113px"
+              document.querySelector(".resultados").style.border= "1px solid white"
+              document.querySelector(".resultados").style.borderRadius="30px"
+              document.querySelector(".resultados").style.width= "40%"
+              document.querySelector(".resultados").style.marginLeft= "30%"
+              document.querySelector(".resultados").style.paddingBottom= "102px"
+              document.querySelector(".resultados ul li img").style.marginRight= "70px"
+              document.querySelector(".resultados ul li img").style.marginLeft= "-3px"
+              document.querySelector(".resultados ul li img").style.marginTop= "22px"
+              document.querySelector(".resultados ul li img").style.width= "55%"
               document.querySelector("ul.top-5").style.display= "none"
               document.querySelector("button.boton-favoritos").style.display= "none"
             })
