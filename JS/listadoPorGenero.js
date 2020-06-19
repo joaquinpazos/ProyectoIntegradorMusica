@@ -20,9 +20,15 @@ function cancionesGenero() {
       li +=     "</a>"
       li += "</li>"
       ul.innerHTML += li
+
+      document.querySelector(".container").style.marginLeft= "30%"
+      document.querySelector(".container").style.marginTop= "3%"
+
     }
   })
 }
+
+
 
 
 
