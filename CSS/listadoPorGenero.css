@@ -2,12 +2,10 @@
     width: 800px;
     height: 600px;
     border: solid 0.5px white;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-top: 6%;
     background-image: url(../Images/fondo\ generos.jpg);
-    background-repeat: no-repeat;
-    
-    
+    background-repeat: no-repeat;    
 }
 
 .listado{
@@ -18,7 +16,7 @@
     grid-template-columns: 50% 50%;
     gap: 30px;
     justify-content: center;
-    margin-left: 150px;
+    margin-left: 20%;
    
     
 }
@@ -26,8 +24,14 @@
 .listado a{
     color:white;
     font-weight: bolder;
-    font-size: larger;
-    
-    
-    
+    font-size: larger;  
+}
+.listado a:hover{
+    color: violet;
+}
+
+#titulo{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
 }
