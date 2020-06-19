@@ -21,7 +21,9 @@ window.addEventListener("load", function(){
             li = "<li>"
             li +=   "<img src='"+ track.album.cover_medium + "' alt=''>"
             li +=    "<p class='title' > Title: "+track.title+"</p>"
+            li +=    "<a href='detalle.html?id=" + track.album.id  + "&type=album" +"'>"
             li +=    "<p class= 'album' > Album: "+track.album.title+"</p>"
+            li +=    "</a>"
             li +=    "<p class= 'fecha'> Release Date: "+track.release_date+"</p>"
             li +=    "<p class= 'duration'> Duration: "+track.duration+ " segundos" + "</p>"
             li += "</li>"
@@ -103,7 +105,9 @@ window.addEventListener("load", function(){
         var li = ""
         for(i=0 ; i < 5; i++){
           li = "<li>"
+          li +=    "<a href='detalle.html?id=" + artist.data[i].id  + "&type=track" +"'>"
           li +=    "<p class='top5'>"+artist.data[i].title + "</p>"
+          li +=    "</a>"
           li += "</li>"
           ul.innerHTML += li
         }
@@ -126,7 +130,9 @@ window.addEventListener("load", function(){
               li = "<li>"
               li +=    "<img src='"+ album.cover_medium + "' alt=''>"
               li +=    "<p class= 'title'> Title: "+album.title+"</p>"
+              li +=    "<a href='detalle.html?id=" + album.artist.id  + "&type=artist" +"'>"
               li +=    "<p class= 'artist'> Artist: "+album.artist.name+"</p>"
+              li +=    "</a>"
               li +=    "<p class= 'fecha'> Release Date: "+album.release_date+"</p>"
               li += "</li>"
               ul.innerHTML += li
